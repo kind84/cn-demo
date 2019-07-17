@@ -27,10 +27,11 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .status-footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  grid-area: footer;
 }
 </style>

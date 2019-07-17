@@ -18,6 +18,14 @@ export default {
 </script>
 
 <style scoped>
+.price-container {
+  margin: 2rem 1rem;
+}
 
+@media(min-width: 600px) {
+  .price-container {
+    margin: 3rem 2rem;
+  }
+}
 </style>
 

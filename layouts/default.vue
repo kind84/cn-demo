@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="app-container">
     <TheHeader />
     <nuxt/>
     <TheFooter />
@@ -29,6 +29,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  height: 100%;
 }
 
 *,
@@ -36,5 +37,27 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
+}
+
+body {
+  height: 100%;
+}
+
+#__nuxt {
+  height: 100%;
+}
+
+#__layout {
+  height: 100%;
+}
+
+.app-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 100%);
+  grid-template-rows: 3rem auto fit-content(5rem);
+  grid-template-areas: "header"
+                       "main"
+                       "footer";
 }
 </style>
